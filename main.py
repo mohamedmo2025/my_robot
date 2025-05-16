@@ -11,7 +11,7 @@ TARGET_USER, MESSAGE, COUNT, ADD_MORE = range(4)
 # بيانات حسابك الشخصي
 api_id = 20197193
 api_hash = "6dc6ca35ea7710e20191485ea9cf177c"
-session_string = "BAE0L0kAOk4x29tpPfeF62uGokIzx5lQqBR2Y1VNjALZ5YO8aGox8wCxHCgJrWwtgoyct3ze2vEb5tWgrwiZDxdVCrSa7bdNQ3JzJOO7o4335uiNdEVOYjfDl_aA6MEOXBvNG7TlWjXjv-AfD4ERuJZLppv2nrn7sWUYEl8VsmnX_KRKZxoRmkeSY7k0G_R2EPijnTbHT5dC-fSBctSjOkPHtqkz2QekB8S6AFCFn7hPNpMLQO-8xo5mTXUmWmDCTgB2uxTJPasv6XqTqKxCM3f4KYHEp_SgM5IZnUTNANZjiix5SiIO0AV2t7w9GZ-RN6JO3DBJbsruSvXGkfgPkCMhHJI7pgAAAAGBFlTuAA"
+session_string = "1BJWap1wBu4b4oubjBRKvDoVKc_GuGnv7dOBo3Ek8JgIVVqUeRZSOyXmlUpLZwnzPm3lVOQeb3y1D5usS6FAFoHC83rjFWqV-9fb7ppiDXByzwsvgphxwRJ7VvFn075lBYHoTGYhDBEHPqjoIWmcfyoxFGAAlj8yRry6_aibl8TvhhE8rxzHRX4v4mbZZMbUh_dBRrEsMMk_mJRKjkDE-9zSkhX_BmD6ozdWV1SXHell405El62hq_GCU50jQ2zhEex_ndIUnXK2ra3utCjwZHIrasn2BlUetdCdcYFXHp_7xojJFQKTbGbEXhdOHZeTQv0cRRUVPz0-vvjsV1LJU3NP0wgHDd74="
 
 # إنشاء عميل Telethon ثابت
 client = TelegramClient(StringSession(session_string), api_id, api_hash)
@@ -106,7 +106,6 @@ def main():
         web_app.run(host='0.0.0.0', port=8080)
 
     Thread(target=run).start()
-
     app.run_polling()
 
 
