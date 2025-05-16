@@ -92,20 +92,6 @@ def main():
     )
 
     app.add_handler(conv_handler)
-    
-    from flask import Flask
-    from threading import Thread
-
-    web_app = Flask(__name__)
-
-    @web_app.route('/')
-    def home():
-        return "Bot is running!"
-
-    def run():
-        web_app.run(host='0.0.0.0', port=8080)
-
-    Thread(target=run).start()
     app.run_polling()
 
 
